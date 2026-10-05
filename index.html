@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>To Do List Enay</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="toDo">
+        <h1>To-Do List Enay 🌻</h1>
+        <p>Ayo Nayla Kerjakan Beberapa Tugasmu!</p>
+
+        <div class="row">
+          <input
+            type="text"
+            id="inputTask"
+            placeholder="Tambahkan tugas..."
+          />
+          <button id="tombol">Tambah</button>
+        </div>
+
+        <div id="emptyState">
+          <img src="assets/image.png" alt="Belum ada tugas" />
+          <p>Belum ada tugas</p>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="stats">
+          <div>
+            Total:
+            <span id="totalCount">0</span>
+          </div>
+
+          <div>
+            Selesai:
+            <span id="completedCount">0</span>
+          </div>
+
+          <div>
+            Belum Selesai:
+            <span id="pendingCount">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
